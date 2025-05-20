@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wechat_oa_mcp"
+version = "0.1.0"
+description = "微信公众号MCP管理工具 - 此 MCP 服务器仅限研究用途，禁止用于商业目的。"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+authors = [
+    {name = "Jupiter", email = "jupiter3019@163.com"}
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "fastmcp",
+    "requests",
+]
+
+[project.scripts]
+wechat-oa-mcp = "wechat_oa_mcp.cli:main" 
